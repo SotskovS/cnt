@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Cnt</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>Cnt</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+  <%= yield %>
+
+  <%= link_to "CHT", root_path, class: 'navbar-brand' %>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Главная", "/index" %></li>
+      <li><%= link_to "Контакты", "/index" %></li>
+      <li><%= link_to "Вход", "/index" %></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="a col-md-8">News</div>
+      <div class="a col-md-4">Contacs</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer row">
+      <div class="col text-center">СНТ "Дубки"</div>
+    </div>
+  </div>
+
+</body>
+
 </html>
