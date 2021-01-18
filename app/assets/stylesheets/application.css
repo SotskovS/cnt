@@ -14,3 +14,12 @@
  *= require_tree .
  *= require_self
  */
+
+ .thumbnail {
+   background-color: #f5f5dc;
+   border-radius: 5px;
+ }
+
+ .thumbnail-inner {
+   padding: 20px 10px 4px;
+ }
